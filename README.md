@@ -67,6 +67,8 @@ A fully interactive 3D globe rotates behind the website using **Three.js**, givi
 ---
 
 ## 🛠 Project Structure
+<img width="1914" height="1013" alt="Screenshot 2025-12-03 044703" src="https://github.com/user-attachments/assets/2380bde7-94cf-4636-add9-fafa1a1522fa" />
+
 /project-folder
 │
 ├── index.html # Main portfolio document
@@ -74,3 +76,4 @@ A fully interactive 3D globe rotates behind the website using **Three.js**, givi
 ├── script.js # Globe + UI interactions
 ├── assets/ # Images, profile photos, gallery
 └── README.md # Documentation (This file)
+
