@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JS File -->
+    <script defer src="script.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.152.2/build/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.152.2/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://unpkg.com/three@0.152.2/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+
+</head>
+
+<body>
+    <canvas id="globeCanvas"></canvas>
+
+    <canvas id="bg-canvas"></canvas>
+    <canvas id="bg-canvas"></canvas>
+    <div id="globe-container"></div>
+
+    <!-- HEADER SECTION -->
+    <header>
+        <button id="modeToggle">🌙 Dark Mode</button>
+        <h1>Welcome to My Portfolio</h1>
+        <p></p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <button id="mobileMenuBtn">☰ Menu</button>
+
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- COUNTER SECTION -->
+        <section>
+            <h2>JavaScript Counter</h2>
+            <p>Count: <span id="counterValue">0</span></p>
+            <button onclick="increaseCounter()">Increase</button>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <h2>About Me</h2>
+
+            <img src="1708883684960.jpg" alt="My Photo">
+
+            <p>Hello! My name is <strong>KETHAVATH SHIVA</strong>. Welcome to my Portfolio.</p>
+
+            <p>I’m a passionate <strong>Data Analyst</strong> and <strong>Web Developer</strong> with skills in Python, SQL, HTML, CSS, Machine Learning, and Data Visualization.</p>
+
+            <p>I enjoy building dashboards, analyzing datasets, and creating clean web pages.</p>
+            
+            <p>Completed projects such as Rainfall Forecasting, Sales Performance Dashboard, and various development tasks.</p>
+
+            <p>I love learning new technologies and solving real-world problems in Data Analytics & ML.</p>
+
+            <h3>My Hobbies</h3>
+            <ul>
+                <li>Coding</li>
+                <li>Reading</li>
+                <li>Gaming</li>
+                <li>Learning new technologies</li>
+            </ul>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" style="background-color: default;">
+            <h2>My Skills</h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-domain">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>SQL</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                    </ul>
+                </div>
+
+                <div class="skill-domain">
+                    <h3>Databases</h3>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                        <li>NoSQL</li>
+                    </ul>
+                </div>
+
+                <div class="skill-domain">
+                    <h3>CS Fundamentals</h3>
+                    <ul>
+                        <li>AI</li>
+                        <li>Computer Networks</li>
+                        <li>DSA</li>
+                        <li>DAA</li>
+                        <li>OOP</li>
+                        <li>DBMS</li>
+                        <li>Operating Systems</li>
+                    </ul>
+                </div>
+
+                <div class="skill-domain">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>MS Office</li>
+                        <li>VS Code</li>
+                        <li>Git / GitHub</li>
+                        <li>NumPy</li>
+                        <li>Pandas</li>
+                        <li>Matplotlib</li>
+                    </ul>
+                </div>
+
+                <div class="skill-domain">
+                    <h3>Technologies</h3>
+                    <ul>
+                        <li>Machine Learning</li>
+                        <li>scikit-learn</li>
+                        <li>Data Analytics</li>
+                        <li>Data Science (Python, R)</li>
+                        <li>Power BI</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" style="background-color: default;">
+            <h2>Projects</h2>
+
+            <!-- PROJECT 1 -->
+            <article>
+                <h3>Sales Performance Dashboard</h3>
+
+                <p>Created a dynamic Superstore Sales Dashboard using Power BI with DAX, Power Query, and interactive filters.</p>
+
+                <p><strong>Tech:</strong> Power BI, DAX, Power Query</p>
+
+                <p><strong>GitHub Repository:</strong></p>
+                <a href="https://github.com/shiva123786/FUTURE_DS_01" target="_blank">
+                    <img src="e-commerse.jpg" alt="Sales Dashboard" style="width:170px; border-radius:10px;">
+                </a>
+            </article>
+
+            <!-- PROJECT 2 -->
+            <article>
+                <h3>Rain Forecasting</h3>
+
+                <p>Built a rainfall prediction model using Random Forest, SARIMA, and time-series feature engineering.</p>
+
+                <p><strong>Tech:</strong> Python, scikit-learn, SARIMA, Pandas</p>
+
+                <p><strong>GitHub Repository:</strong></p>
+                <a href="https://github.com/shiva123786/Rain-ForeCasting" target="_blank">
+                    <img src="mini ride.png" alt="Rain Forecasting" style="width:170px; border-radius:10px;">
+                </a>
+            </article>
+
+        </section>
+
+        <!-- RESUME -->
+        <section>
+            <h2></h2>
+            <p>RESUME:
+                <a href="KShiva-WebDeveloper_resume.pdf" download>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#4a6cf7">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Zm0 2.5L18.5 9H14Z"/>
+                    </svg>
+                </a>
+            </p>
+        </section>
+
+        <!-- CONTACT FORM -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+
+                <label>Name:</label>
+                <input type="text" id="name" placeholder="Enter your name">
+
+                <label>Email:</label>
+                <input type="email" id="email" placeholder="Enter your email">
+
+                <label>Message:</label>
+                <textarea id="message" rows="4" placeholder="Write your message"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- VIDEO -->
+        <section>
+            <h2>Sample Video</h2>
+            <p>My project sample video</p>
+
+            <video width="300" controls>
+                <source src="Student analysis.mp4" type="video/mp4">
+            </video>
+        </section>
+
+    </main>
+
+    <!-- TASK MANAGER -->
+    <section id="taskManager">
+        <h2>Task Manager</h2>
+        <input type="text" id="taskInput" placeholder="Enter a task">
+        <button id="addTaskBtn">Add Task</button>
+
+        <ul id="taskList"></ul>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>SHIVA KETHAVATH</h3>
+
+        <p>📧 <a href="mailto:shivakethavath100@gmail.com">Mail</a></p>
+
+        <!-- SOCIAL LINKS -->
+        <div style="margin-top:20px;">
+            <a href="https://www.instagram.com/d_o_n_s_h_i_v_a_/" target="_blank" style="color:#ff4da6; margin:0 15px; font-size:28px;">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/kethavath-shiva-a6a0662b5/" target="_blank" style="color:#4db8ff; margin:0 15px; font-size:28px;">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="https://github.com/shiva123786" target="_blank" style="color:#ffffff; margin:0 15px; font-size:28px;">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+
+        <p style="margin-top:15px; opacity:0.7; font-size:14px;">
+            © 2025 Shiva Kethavath. All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
